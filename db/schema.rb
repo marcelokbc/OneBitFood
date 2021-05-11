@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_11_135014) do
+ActiveRecord::Schema.define(version: 2021_05_11_183645) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -63,11 +63,11 @@ ActiveRecord::Schema.define(version: 2021_05_11_135014) do
     t.string "city"
     t.string "neighborhood"
     t.string "number"
-    t.string "complemet"
     t.integer "status", default: 0
     t.integer "restaurant_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "complement"
     t.index ["restaurant_id"], name: "index_orders_on_restaurant_id"
   end
 
@@ -97,10 +97,10 @@ ActiveRecord::Schema.define(version: 2021_05_11_135014) do
     t.string "street"
     t.string "neighborhood"
     t.string "number"
-    t.string "comlement"
     t.integer "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "complement"
     t.index ["category_id"], name: "index_restaurants_on_category_id"
   end
 

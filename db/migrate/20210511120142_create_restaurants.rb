@@ -8,7 +8,6 @@ class CreateRestaurants < ActiveRecord::Migration[6.1]
       t.string :street
       t.string :neighborhood
       t.string :number
-      t.string :comlement
       t.references :category, null: false, foreign_key: true
 
       t.timestamps
