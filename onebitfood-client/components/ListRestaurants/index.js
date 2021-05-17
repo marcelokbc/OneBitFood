@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col }  from 'react-bootstrap';
-
+import Restaurant from '../ListRestaurants/Restaurant';
 export default function ListRestaurants() {
  const restaurants = [
   {
